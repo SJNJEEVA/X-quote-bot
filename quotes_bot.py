@@ -82,8 +82,8 @@ while len(popped_quotes) < initial_quote:
             time.sleep(900)
         break
     
-    daily_quotes += 1
-    if len(popped_quotes) % daily_quotes == 0:  # After first of pair
+    
+    if len(popped_quotes) % 2 == 0 and len(popped_quotes)> 0:  # After first of pair
         time.sleep(12 * 3600)  # 12-hour gap
 
 print('All the quotes processed!')
